@@ -5,7 +5,6 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import CartPage from "../pages/book/CartPage";
 import CheckoutPage from "../pages/book/CheckoutPage";
-import SingleBook from "../pages/book/singleBook";
 import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../pages/book/OrderPage";
 import AdminRoute from "./AdminRoute";
@@ -15,6 +14,7 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import ManageBooks from "../pages/dashboard/manageBooks/ManageBooks";
 import AddBook from "../pages/dashboard/addBook/AddBook";
 import UpdateBook from "../pages/dashboard/editBook/UpdateBook";
+import SingleBook from "../pages/book/SingleBook";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         path: "/orders",
         element: (
           <PrivateRoute>
-            <OrderPage />,
+            <OrderPage />
           </PrivateRoute>
         ),
       },
