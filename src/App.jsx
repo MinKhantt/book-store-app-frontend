@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
-
+import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
 import { AuthProvider } from "./context/AuthContext";
-import Navbar from "./components/navbar";
 
 function App() {
   return (
